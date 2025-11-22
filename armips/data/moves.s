@@ -861,7 +861,7 @@ movedata MOVE_EMBER, "Ember"
 movedata MOVE_FLAMETHROWER, "Flamethrower"
     battleeffect MOVE_EFFECT_BURN_HIT
     pss SPLIT_SPECIAL
-    basepower 90
+    basepower 95
     type TYPE_FIRE
     accuracy 100
     pp 15
@@ -909,7 +909,7 @@ movedata MOVE_WATER_GUN, "Water Gun"
 movedata MOVE_HYDRO_PUMP, "Hydro Pump"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
-    basepower 110
+    basepower 120
     type TYPE_WATER
     accuracy 80
     pp 5
@@ -925,7 +925,7 @@ movedata MOVE_HYDRO_PUMP, "Hydro Pump"
 movedata MOVE_SURF, "Surf"
     battleeffect MOVE_EFFECT_DOUBLE_DAMAGE_DIVE
     pss SPLIT_SPECIAL
-    basepower 90
+    basepower 95
     type TYPE_WATER
     accuracy 100
     pp 15
@@ -941,7 +941,7 @@ movedata MOVE_SURF, "Surf"
 movedata MOVE_ICE_BEAM, "Ice Beam"
     battleeffect MOVE_EFFECT_FREEZE_HIT
     pss SPLIT_SPECIAL
-    basepower 90
+    basepower 95
     type TYPE_ICE
     accuracy 100
     pp 10
@@ -957,7 +957,7 @@ movedata MOVE_ICE_BEAM, "Ice Beam"
 movedata MOVE_BLIZZARD, "Blizzard"
     battleeffect MOVE_EFFECT_BLIZZARD
     pss SPLIT_SPECIAL
-    basepower 110
+    basepower 120
     type TYPE_ICE
     accuracy 70
     pp 5
@@ -1069,9 +1069,9 @@ movedata MOVE_DRILL_PECK, "Drill Peck"
 movedata MOVE_SUBMISSION, "Submission"
     battleeffect MOVE_EFFECT_RECOIL_QUARTER
     pss SPLIT_PHYSICAL
-    basepower 80
+    basepower 90
     type TYPE_FIGHTING
-    accuracy 80
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1373,7 +1373,7 @@ movedata MOVE_THUNDER_SHOCK, "Thunder Shock"
 movedata MOVE_THUNDERBOLT, "Thunderbolt"
     battleeffect MOVE_EFFECT_PARALYZE_HIT
     pss SPLIT_SPECIAL
-    basepower 90
+    basepower 95
     type TYPE_ELECTRIC
     accuracy 100
     pp 15
@@ -1391,7 +1391,7 @@ movedata MOVE_THUNDER_WAVE, "Thunder Wave"
     pss SPLIT_STATUS
     basepower 0
     type TYPE_ELECTRIC
-    accuracy 90
+    accuracy 100
     pp 20
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1405,7 +1405,7 @@ movedata MOVE_THUNDER_WAVE, "Thunder Wave"
 movedata MOVE_THUNDER, "Thunder"
     battleeffect MOVE_EFFECT_THUNDER // accuracy in rain & sun handled in other_battle_calculators.c
     pss SPLIT_SPECIAL
-    basepower 110
+    basepower 120
     type TYPE_ELECTRIC
     accuracy 70
     pp 10
@@ -1423,7 +1423,7 @@ movedata MOVE_ROCK_THROW, "Rock Throw"
     pss SPLIT_PHYSICAL
     basepower 50
     type TYPE_ROCK
-    accuracy 90
+    accuracy 100
     pp 15
     effectchance 0
     target RANGE_SINGLE_TARGET
@@ -1627,9 +1627,9 @@ movedata MOVE_TELEPORT, "Teleport"
     movedescription MOVE_TELEPORT, "Use it to flee from\nany wild Pokémon.\nIt can also warp to\nthe last Pokémon\nCenter visited."
 
 movedata MOVE_NIGHT_SHADE, "Night Shade"
-    battleeffect MOVE_EFFECT_LEVEL_DAMAGE_FLAT
+    battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
-    basepower 1
+    basepower 40
     type TYPE_GHOST
     accuracy 100
     pp 15
@@ -1696,7 +1696,7 @@ movedata MOVE_RECOVER, "Recover"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -2029,7 +2029,7 @@ movedata MOVE_BONE_CLUB, "Bone Club"
 movedata MOVE_FIRE_BLAST, "Fire Blast"
     battleeffect MOVE_EFFECT_BURN_HIT
     pss SPLIT_SPECIAL
-    basepower 110
+    basepower 120
     type TYPE_FIRE
     accuracy 85
     pp 5
@@ -2176,7 +2176,7 @@ movedata MOVE_SOFT_BOILED, "Soft-Boiled"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -2512,7 +2512,7 @@ movedata MOVE_REST, "Rest"
     basepower 0
     type TYPE_PSYCHIC
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -2973,7 +2973,7 @@ movedata MOVE_SCARY_FACE, "Scary Face"
 movedata MOVE_FEINT_ATTACK, "Feint Attack"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_PHYSICAL
-    basepower 60
+    basepower 70
     type TYPE_DARK
     accuracy 0
     pp 20
@@ -3344,7 +3344,7 @@ movedata MOVE_MILK_DRINK, "Milk Drink"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -3469,7 +3469,7 @@ movedata MOVE_HEAL_BELL, "Heal Bell"
 movedata MOVE_RETURN, "Return"
     battleeffect MOVE_EFFECT_POWER_BASED_ON_FRIENDSHIP
     pss SPLIT_PHYSICAL
-    basepower 1
+    basepower 102
     type TYPE_NORMAL
     accuracy 100
     pp 20
@@ -3501,7 +3501,7 @@ movedata MOVE_PRESENT, "Present"
 movedata MOVE_FRUSTRATION, "Frustration"
     battleeffect MOVE_EFFECT_POWER_BASED_ON_LOW_FRIENDSHIP
     pss SPLIT_PHYSICAL
-    basepower 1
+    basepower 102
     type TYPE_NORMAL
     accuracy 100
     pp 20
@@ -4864,7 +4864,7 @@ movedata MOVE_SLACK_OFF, "Slack Off"
     basepower 0
     type TYPE_NORMAL
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -5053,7 +5053,7 @@ movedata MOVE_AIR_CUTTER, "Air Cutter"
 movedata MOVE_OVERHEAT, "Overheat"
     battleeffect MOVE_EFFECT_USER_SP_ATK_DOWN_2
     pss SPLIT_SPECIAL
-    basepower 130
+    basepower 140
     type TYPE_FIRE
     accuracy 90
     pp 5
@@ -5293,7 +5293,7 @@ movedata MOVE_SHEER_COLD, "Sheer Cold"
 movedata MOVE_MUDDY_WATER, "Muddy Water"
     battleeffect MOVE_EFFECT_LOWER_ACCURACY_HIT
     pss SPLIT_SPECIAL
-    basepower 90
+    basepower 95
     type TYPE_WATER
     accuracy 85
     pp 10
@@ -5325,7 +5325,7 @@ movedata MOVE_BULLET_SEED, "Bullet Seed"
 movedata MOVE_AERIAL_ACE, "Aerial Ace"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_PHYSICAL
-    basepower 60
+    basepower 70
     type TYPE_FLYING
     accuracy 0
     pp 20
@@ -5533,7 +5533,7 @@ movedata MOVE_VOLT_TACKLE, "Volt Tackle"
 movedata MOVE_MAGICAL_LEAF, "Magical Leaf"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_SPECIAL
-    basepower 60
+    basepower 70
     type TYPE_GRASS
     accuracy 0
     pp 20
@@ -5629,7 +5629,7 @@ movedata MOVE_ROCK_BLAST, "Rock Blast"
 movedata MOVE_SHOCK_WAVE, "Shock Wave"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_SPECIAL
-    basepower 60
+    basepower 70
     type TYPE_ELECTRIC
     accuracy 0
     pp 20
@@ -5696,7 +5696,7 @@ movedata MOVE_ROOST, "Roost"
     basepower 0
     type TYPE_FLYING
     accuracy 0
-    pp 5
+    pp 10
     effectchance 0
     target RANGE_USER
     priority 0
@@ -5931,7 +5931,7 @@ movedata MOVE_U_TURN, "U-turn"
     movedescription MOVE_U_TURN, "After making its\nattack, the user\nrushes back to switch\nplaces with a party\nPokémon in waiting."
 
 movedata MOVE_CLOSE_COMBAT, "Close Combat"
-    battleeffect MOVE_EFFECT_USER_DEF_SP_DEF_DOWN_HIT
+    battleeffect MOVE_EFFECT_RECOIL_THIRD
     pss SPLIT_PHYSICAL
     basepower 120
     type TYPE_FIGHTING
@@ -6237,7 +6237,7 @@ movedata MOVE_WORRY_SEED, "Worry Seed"
 movedata MOVE_SUCKER_PUNCH, "Sucker Punch"
     battleeffect MOVE_EFFECT_HIT_FIRST_IF_TARGET_ATTACKING
     pss SPLIT_PHYSICAL
-    basepower 70
+    basepower 80
     type TYPE_DARK
     accuracy 100
     pp 5
@@ -6349,7 +6349,7 @@ movedata MOVE_FORCE_PALM, "Force Palm"
 movedata MOVE_AURA_SPHERE, "Aura Sphere"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_SPECIAL
-    basepower 80
+    basepower 90
     type TYPE_FIGHTING
     accuracy 0
     pp 20
@@ -6509,7 +6509,7 @@ movedata MOVE_BUG_BUZZ, "Bug Buzz"
 movedata MOVE_DRAGON_PULSE, "Dragon Pulse"
     battleeffect MOVE_EFFECT_HIT
     pss SPLIT_SPECIAL
-    basepower 85
+    basepower 90
     type TYPE_DRAGON
     accuracy 100
     pp 10
@@ -6589,9 +6589,9 @@ movedata MOVE_VACUUM_WAVE, "Vacuum Wave"
 movedata MOVE_FOCUS_BLAST, "Focus Blast"
     battleeffect MOVE_EFFECT_LOWER_SP_DEF_HIT
     pss SPLIT_SPECIAL
-    basepower 120
+    basepower 80
     type TYPE_FIGHTING
-    accuracy 70
+    accuracy 100
     pp 5
     effectchance 10
     target RANGE_SINGLE_TARGET
@@ -6957,7 +6957,7 @@ movedata MOVE_TRICK_ROOM, "Trick Room"
 movedata MOVE_DRACO_METEOR, "Draco Meteor"
     battleeffect MOVE_EFFECT_USER_SP_ATK_DOWN_2
     pss SPLIT_SPECIAL
-    basepower 130
+    basepower 140
     type TYPE_DRAGON
     accuracy 90
     pp 5
@@ -7005,7 +7005,7 @@ movedata MOVE_LAVA_PLUME, "Lava Plume"
 movedata MOVE_LEAF_STORM, "Leaf Storm"
     battleeffect MOVE_EFFECT_USER_SP_ATK_DOWN_2
     pss SPLIT_SPECIAL
-    basepower 130
+    basepower 140
     type TYPE_GRASS
     accuracy 90
     pp 5
@@ -7101,7 +7101,7 @@ movedata MOVE_IRON_HEAD, "Iron Head"
 movedata MOVE_MAGNET_BOMB, "Magnet Bomb"
     battleeffect MOVE_EFFECT_BYPASS_ACCURACY
     pss SPLIT_PHYSICAL
-    basepower 60
+    basepower 70
     type TYPE_STEEL
     accuracy 0
     pp 20
@@ -7323,11 +7323,11 @@ movedata MOVE_HEAL_ORDER, "Heal Order"
     movedescription MOVE_HEAL_ORDER, "The user calls out\nits underlings to heal\nit. The user regains\nup to half of its\nmax HP."
 
 movedata MOVE_HEAD_SMASH, "Head Smash"
-    battleeffect MOVE_EFFECT_RECOIL_HALF
+    battleeffect MOVE_EFFECT_RECOIL_THIRD
     pss SPLIT_PHYSICAL
-    basepower 150
+    basepower 120
     type TYPE_ROCK
-    accuracy 80
+    accuracy 100
     pp 5
     effectchance 0
     target RANGE_SINGLE_TARGET

@@ -60,7 +60,7 @@
 //#define DEBUG_PRINT_HEAP_OVERFLOW_MESSAGES_ASSERT_FAIL
 
 // DEBUG_ALWAYS_OBEY will force all battlers to obey regardless of badges owned
-//#define DEBUG_ALWAYS_OBEY
+#define DEBUG_ALWAYS_OBEY
 
 // DEBUG_ENDTURN_LOGIC turns on a number of debug prints related to the end-turn logic
 //#define DEBUG_ENDTURN_LOGIC

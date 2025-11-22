@@ -1487,7 +1487,7 @@ int UNUSED CalcBaseDamageInternal(struct BattleSystem *bw, struct BattleStruct *
         && HasType(sp, defender, TYPE_ROCK)) {
             sp_defense = QMul_RoundDown(sp_defense, UQ412__1_5);
         }
-        if ((field_cond & WEATHER_SNOW_ANY)
+        if ((field_cond & WEATHER_HAIL_ANY)
         && HasType(sp, defender, TYPE_ICE)) {
             defense = QMul_RoundDown(defense, UQ412__1_5);
         }

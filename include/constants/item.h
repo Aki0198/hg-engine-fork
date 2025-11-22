@@ -152,7 +152,7 @@
 #define ITEM_AIR_MAIL                     146
 #define ITEM_MOSAIC_MAIL                  147
 #define ITEM_BRICK_MAIL                   148
-#define ITEM_CHERI_BERRY                  149
+#define ITEM_CHERI_BERRY                  149 //Berries
 #define ITEM_CHESTO_BERRY                 150
 #define ITEM_PECHA_BERRY                  151
 #define ITEM_RAWST_BERRY                  152
@@ -167,18 +167,18 @@
 #define ITEM_MAGO_BERRY                   161
 #define ITEM_AGUAV_BERRY                  162
 #define ITEM_IAPAPA_BERRY                 163
-#define ITEM_RAZZ_BERRY                   164
+#define ITEM_RAZZ_BERRY                   164 //Trash
 #define ITEM_BLUK_BERRY                   165
 #define ITEM_NANAB_BERRY                  166
 #define ITEM_WEPEAR_BERRY                 167
 #define ITEM_PINAP_BERRY                  168
-#define ITEM_POMEG_BERRY                  169
+#define ITEM_POMEG_BERRY                  169 //EV Berries
 #define ITEM_KELPSY_BERRY                 170
 #define ITEM_QUALOT_BERRY                 171
 #define ITEM_HONDEW_BERRY                 172
 #define ITEM_GREPA_BERRY                  173
 #define ITEM_TAMATO_BERRY                 174
-#define ITEM_CORNN_BERRY                  175
+#define ITEM_CORNN_BERRY                  175 //More trash
 #define ITEM_MAGOST_BERRY                 176
 #define ITEM_RABUTA_BERRY                 177
 #define ITEM_NOMEL_BERRY                  178
@@ -187,7 +187,7 @@
 #define ITEM_WATMEL_BERRY                 181
 #define ITEM_DURIN_BERRY                  182
 #define ITEM_BELUE_BERRY                  183
-#define ITEM_OCCA_BERRY                   184
+#define ITEM_OCCA_BERRY                   184 //Resist Berries
 #define ITEM_PASSHO_BERRY                 185
 #define ITEM_WACAN_BERRY                  186
 #define ITEM_RINDO_BERRY                  187
@@ -216,7 +216,7 @@
 #define ITEM_CUSTAP_BERRY                 210
 #define ITEM_JABOCA_BERRY                 211
 #define ITEM_ROWAP_BERRY                  212
-#define ITEM_BRIGHT_POWDER                213
+#define ITEM_BRIGHT_POWDER                213 //Held items
 #define ITEM_WHITE_HERB                   214
 #define ITEM_MACHO_BRACE                  215
 #define ITEM_EXP_SHARE                    216

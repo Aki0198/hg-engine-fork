@@ -989,12 +989,12 @@ u8 LONG_CALL CalcSpeed(void *bw, struct BattleStruct *sp, int client1, int clien
 
     if ((ability1 != ABILITY_QUICK_FEET)
     && sp->battlemon[client1].condition & STATUS_PARALYSIS) {
-        speed1 = QMul_RoundUp(speed1, UQ412__0_5);  // gen 7 on only halves speed for paralysis
+        speed1 = QMul_RoundUp(speed1, UQ412__0_25);  // gen 7 on only halves speed for paralysis
     }
 
     if ((ability2 != ABILITY_QUICK_FEET)
     && sp->battlemon[client2].condition & STATUS_PARALYSIS) {
-        speed2 = QMul_RoundUp(speed2, UQ412__0_5);  // gen 7 on only halves speed for paralysis
+        speed2 = QMul_RoundUp(speed2, UQ412__0_25);  // gen 7 on only halves speed for paralysis
     }
 
 #ifdef DEBUG_SPEED_CALC

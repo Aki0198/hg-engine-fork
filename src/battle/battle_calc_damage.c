@@ -523,6 +523,11 @@ void CalcDamageOverall(void *bw, struct BattleStruct *sp) {
         finalModifier = QMul_RoundUp(finalModifier, UQ412__2_0);
     }
 
+    // Explosion and Self-destruct
+    if (sp->moveTbl[moveno].effect == MOVE_EFFECT_HALVE_DEFENSE) {
+            finalModifier = QMul_RoundUp(finalModifier, UQ412__2_0);
+    }
+
     if (((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_FLAT) == 0) && ((sp->server_status_flag & SERVER_STATUS_FLAG_TYPE_NONE) == 0)) {
         switch (moveEffectiveness) {
             case TYPE_MUL_SUPER_EFFECTIVE:
@@ -629,7 +634,7 @@ void CalcDamageOverall(void *bw, struct BattleStruct *sp) {
         // 6.9.3 Sniper
         if ((sp->rawSpeedNonRNGClientOrder[i] == attacker)
          && (attackerAbility == ABILITY_SNIPER) && (sp->critical > 1)) {
-            finalModifier = QMul_RoundUp(finalModifier, UQ412__1_5);
+            finalModifier = QMul_RoundUp(finalModifier, UQ412__1_25);
 #ifdef DEBUG_DAMAGE_CALC
             debug_printf("\n=================\n");
             debug_printf("[CalcBaseDamage] 6.9.3 Sniper\n");
