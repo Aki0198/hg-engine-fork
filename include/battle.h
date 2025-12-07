@@ -58,6 +58,7 @@
 
 // Type effectiveness
 #define TYPE_MUL_NO_EFFECT              0
+// #define TYPE_MUL_QUADRUPLE_NOT_EFFECTIVE   2
 #define TYPE_MUL_TRIPLE_NOT_EFFECTIVE   3
 #define TYPE_MUL_DOUBLE_NOT_EFFECTIVE   4
 #define TYPE_MUL_NOT_EFFECTIVE          5
@@ -65,6 +66,17 @@
 #define TYPE_MUL_SUPER_EFFECTIVE        20
 #define TYPE_MUL_DOUBLE_SUPER_EFFECTIVE 30
 #define TYPE_MUL_TRIPLE_SUPER_EFFECTIVE 40
+// #define TYPE_MUL_QUADRUPLE_SUPER_EFFECTIVE 50
+
+// #define EFFECTIVENESS_MULT_QUADRUPLE_NOT_EFFECTIVE   625
+#define EFFECTIVENESS_MULT_TRIPLE_NOT_EFFECTIVE   125
+#define EFFECTIVENESS_MULT_DOUBLE_NOT_EFFECTIVE   250
+#define EFFECTIVENESS_MULT_NOT_EFFECTIVE          500
+#define EFFECTIVENESS_MULT_NORMAL                 1000
+#define EFFECTIVENESS_MULT_SUPER_EFFECTIVE        2000
+#define EFFECTIVENESS_MULT_DOUBLE_SUPER_EFFECTIVE 4000
+#define EFFECTIVENESS_MULT_TRIPLE_SUPER_EFFECTIVE 8000
+// #define EFFECTIVENESS_MULT_QUADRUPLE_SUPER_EFFECTIVE 160000
 
 // Special type table IDs
 #define TYPE_FORESIGHT 0xFE
@@ -1190,6 +1202,14 @@ typedef struct OnceOnlyAbilityFlags {
     BOOL superSweetSyrupFlag;
 } OnceOnlyAbilityFlags;
 
+typedef struct MoveConditionsFlags {
+    u8 endTurnMoveEffectActivated : 1;
+    u8 moveFailureLastTurn : 1;
+    u8 moveFailureThisTurn : 1;
+    u8 padding : 5;
+} MoveConditionsFlags;
+
+
 #define BATTLE_SCRIPT_PUSH_DEPTH 4
 
 /**
@@ -1417,6 +1437,7 @@ struct BattleStruct {
                u8 enemySideHasFaintedTeammateLastTurn : 2;
 
                BOOL gemBoostingMove;
+               MoveConditionsFlags moveConditionsFlags[CLIENT_MAX];
 };
 
 enum {
@@ -2009,6 +2030,7 @@ struct PACKED sDamageCalc
     u32 sheerForceFlag;
 
     BOOL isGrounded;
+    BOOL hasMoveFailureLastTurn;
 };
 
 struct PACKED DamageCalcStruct {
@@ -3872,6 +3894,8 @@ void LONG_CALL BattleMessage_BufferTrainerName(struct BattleSystem *bsys, int bu
 void LONG_CALL BattleMessage_BufferBoxName(struct BattleSystem *bsys, int bufferIndex, int param);
 
 int LONG_CALL MoveCheckDamageNegatingAbilities(struct BattleStruct *sp, int attacker, int defender);
+
+u8 LONG_CALL UpdateTypeEffectiveness(u32 move_no, u32 held_effect, u8 defender_type, u8 defaultEffectiveness);
 
 int LONG_CALL GetTypeEffectiveness(struct BattleSystem *bw, struct BattleStruct *sp, int attack_client, int defence_client, int move_type, u32 *flag);
 
